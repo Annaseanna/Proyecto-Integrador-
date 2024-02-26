@@ -1,0 +1,138 @@
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+p{
+  padding: 0;
+  margin: 0%;
+  color: #263238;
+}
+
+body{
+  margin: 0%;
+}
+
+#app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.route{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;}
+/* -----------------------------------|HEADER STYLES|------------------------------------- */
+header{
+  z-index: 100;
+  background-color: #FFFBE2;
+  width: 100%;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: top 2s;
+}
+.sessionButtonsContainer{
+  width: 25vw;
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-around;
+  padding-right: 6%;
+}
+.sessionButton{
+  align-self: center;
+  margin: 3%;
+  width: 100%;
+  height: fit-content;
+  font-size: 1vw;
+  text-align: center;
+  border-radius: 3px;
+  border-style:solid;
+  border-color: #FBC02D;
+}
+
+.sessionButton :hover{
+  color:#FBC02D;
+}
+.sessionButton > a{
+  color: #FBC02D;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.sessionButton > a >h4{
+  margin: 3%;
+ 
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items:end;
+  padding: 1%;
+  padding-left: 2%;
+  width: 20vw;
+  min-width: 200px;
+  font-size:13px;
+  font-style: italic;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo > img{
+  margin: 0%;
+  margin-right: 2%;
+  max-width: 23%;
+}
+
+/* -----------------------------------|FOOTER STYLES|------------------------------------- */
+footer{
+  background-color: #FFFBE2;
+  width: 100vw;
+  position:fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  max-height: 30px;
+  height: fit-content;
+}
+.footerLink{
+  margin-left: 2%;
+  height: 2rem;
+  width: 25vw;
+  font-size:0.9vw;
+  font-style: italic;
+  text-decoration: none;
+  cursor: pointer; 
+}
+.footerLink > .img{
+  height: 100%;
+  max-width: 30%;
+  min-width: 90px;
+}
+.socialNetworksContainer{
+  margin-right: 2%;
+  display: flex;
+  justify-content: space-between;
+  width: 25vw;
+}
+.icon{
+  width: 10%;
+  margin: 2px;
+  min-width: 15px;
+}
+footer > p{
+  font-size: 2vw;
+}
+@media screen and (min-width: 480px){
+  footer > p{
+    font-size: 2vh;
+  }
+}
